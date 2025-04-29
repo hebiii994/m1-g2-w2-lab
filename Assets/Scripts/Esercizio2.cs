@@ -9,14 +9,20 @@ public class Esercizio2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-#pragma warning disable CS0162 // Unreachable code detected
+
+//#pragma warning disable CS0162 // Unreachable code detected
         for (int i = 0; i < arr.Length; i++)
         {
             Debug.Log(arr[0] + arr[1] + arr[2] + arr[3]);
             Debug.Log(arr[0] * arr[1] * arr[2] * arr[3]);
-            break;
+            if (i == 0)
+            {
+                break;
+            }
+            
         }
-#pragma warning restore CS0162 // Unreachable code detected
+//#pragma warning restore CS0162 // Unreachable code detected
+
     }
 
     // Update is called once per frame
